@@ -9,11 +9,42 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
+    <header class="video-container">
+        <div class="overlay">
+            <video poster="background-video.jpg" autoplay muted loop class="video-container__background">
+                <source src="video.mp4" type="video/webm">
+                <source src="video.webm" type="video/mp4">
+            </video>
+            <nav>
+                <a href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#start" id="startListItem">HOME</a></li>
+                    <li class="menu__item"><a href="#services" id="aboutMeListItem">SERVICES</a></li>
+                    <li class="menu__item"><a href="#team" id="skillsListItem">GALLERY</a></li>
+                    <li class="menu__item"><a href="#about" id="portfolioListItem">ABOUT</a></li>
+                    <li class="menu__item"><a href="#contact" id="contactListItem">CONTACT</a></li>
+                    <li class="menu__item book"><a href="#book" id="bookListItem">BOOK NOW</a></li>
+                    <li class="menu__item nav">
+                        <div class="nav-icon">
+                            <span id="first"></span>
+                            <span id="second"></span>
+                            <span id="third"></span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="video-container__slogan">
+            <h2>Welcome to Haircare</h2>
+            <h1>We are professional care for your hair</h1>
+            <a href="#book">Book Now</a>
+        </div>
 
+    </header>
 </body>
 
-</html>
+</html>`
