@@ -3,14 +3,14 @@
 $main-font: 'Poppins',
 sans-serif;
 $gold: rgb(191, 146, 91);
+$grey: rgb(146, 145, 144);
 
 body {
     font-family: $main-font;
 }
 
 .video-container {
-    position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -129,6 +129,7 @@ body {
         z-index: 2;
         display: block;
         position: relative;
+        padding-top: 15%;
         top: 30%;
         text-align: center;
 
@@ -159,6 +160,209 @@ body {
                 text-decoration: none;
                 border: 5px solid $gold;
                 font-weight: bold;
+            }
+        }
+    }
+}
+
+.description {
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        min-height: 400px;
+
+        .description__man {
+            padding: 30px 50px;
+            background-image: url('../images/man.jpg');
+            background-position: center center;
+            background-size: 100% 100%;
+
+            h1 {
+                border: solid 2px $gold;
+                padding: 150px 70px;
+                text-align: center;
+                font-size: 2em;
+                font-weight: bold;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+
+        .description__woman {
+            @extend .description__man;
+            background-image: url('../images/woman.jpg');
+        }
+
+        .description__text {
+            background-color: rgb(246, 242, 234);
+            text-align: center;
+            padding: 20px 30px;
+
+            &__logo {
+                height: 70px;
+                width: auto;
+            }
+
+            &__header {
+                padding-bottom: 5px;
+                border-bottom: solid 2px $gold;
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+            }
+
+            &__paragraph {
+                color: $grey;
+                margin-top: 20px;
+                font-size: 0.9em;
+            }
+
+            &__more {
+                display: inline-block;
+                margin-top: 20px;
+                color: $gold;
+                padding: 10px;
+                border: solid 2px $gold;
+                transition: 0.1s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: $gold;
+                    color: white;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+}
+
+.services {
+    background-color: rgb(246, 242, 234);
+    padding: 60px 50px;
+
+    &__small-title {
+        color: $gold;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    &__big-title {
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    &__paragraph {
+        color: $grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .row {
+        .services__element {
+            padding: 50px 0;
+            text-align: center;
+
+            &__icon {
+                height: 70px;
+                width: auto;
+            }
+
+            &__title {
+                font-size: 1.2em;
+                font-weight: bold;
+                color: $gold;
+            }
+
+            &__description {
+                padding: 10px 25px;
+                font-size: 1em;
+                color: $grey;
+            }
+        }
+    }
+}
+
+.booking {
+    background-color: rgb(236, 232, 222);
+    padding: 60px 50px;
+
+    &__small-title {
+        color: $gold;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    &__big-title {
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    &__paragraph {
+        color: $grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    &__form {
+        padding: 30px 50px;
+
+        .row {
+            .booking__form__element {
+                &__input {
+                    width: 100%;
+                    margin: 10px 0;
+                    border-radius: 10px;
+                    font-size: 1em;
+                    padding: 8px 15px;
+                    border: solid 2px $gold;
+                    background-color: rgb(236, 232, 222);
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .message {
+                    height: 150px;
+                }
+
+                select {
+                    background: url('../images/arrow-down.png') no-repeat right #ddd;
+                    -webkit-appearance: none;
+                    background-position-x: 98%;
+                    background-color: rgb(236, 232, 222);
+                }
+            }
+        }
+
+        .booking__form__button {
+            font-size: 1.5em;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: $gold;
+            color: white;
+            border: none;
+            margin: 10px auto;
+            display: block;
+            letter-spacing: 1px;
+
+
+            &:focus {
+                outline: none;
             }
         }
     }

@@ -45,6 +45,120 @@
         </div>
 
     </header>
+    <section class="description">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 description__man">
+                <h1>For Men</h1>
+            </div>
+            <div class="col-lg-4 col-md-12 description__text">
+                <img class="description__text__logo" src="./images/logo-black.png" alt="logo">
+                <h1 class="description__text__header">Welcome to our salon</h1>
+                <p class="description__text__paragraph">A small river named Duden flows by their place and supplies it
+                    with the necessary regelialia. It is a
+                    paradisematic country, in which rostaed parts of sentences fly into your mouth. Far far away, behind
+                    the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <a class="description__text__more" href="#">Read more</a>
+
+            </div>
+            <div class="col-lg-4 col-md-12 description__woman">
+                <h1>For Women</h1>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2 class="services__small-title">Services</h2>
+        <h1 class="services__big-title">Services menu</h1>
+        <p class="services__paragraph">Far far away, behind the word mountains, far from the countries Vokalia and
+            Consonantia.</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 services__element">
+                <img class="services__element__icon" src="images/hair.png" alt="icon">
+                <h1 class="services__element__title">Haircut & Styling</h1>
+                <p class="services__element__description">A small river named Duden flows by their place and supplies.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 services__element">
+                <img class="services__element__icon" src="images/beard.png" alt="icon">
+                <h1 class="services__element__title">Beard</h1>
+                <p class="services__element__description">A small river named Duden flows by their place and supplies.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 services__element">
+                <img class="services__element__icon" src="images/makeup.png" alt="icon">
+                <h1 class="services__element__title">Makeup</h1>
+                <p class="services__element__description">A small river named Duden flows by their place and supplies.
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 services__element">
+                <img class="services__element__icon" src="images/treatment.png" alt="icon">
+                <h1 class="services__element__title">Body Treatment</h1>
+                <p class="services__element__description">A small river named Duden flows by their place and supplies.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="booking">
+        <h2 class="booking__small-title">Booking</h2>
+        <h1 class="booking__big-title">Make an appointment</h1>
+        <p class="booking__paragraph">Far far away, behind the word mountains, far from the countries Vokalia and
+            Consonantia</p>
+        <form id="book-visit" name="book-visit-form" accept-charset="utf-8" method="post" class="booking__form">
+            <div class="row">
+                <div class="col-sm-6 booking__form__element">
+                    <input type="text" name="name" id="full-name" placeholder="Name" required=""
+                        class="booking__form__element__input">
+                </div>
+                <div class="col-sm-6 booking__form__element">
+                    <input type="email" name="_replyto" id="email-address" placeholder="Email" required=""
+                        class="booking__form__element__input">
+                </div>
+                <div class="col-sm-6 booking__form__element">
+                    <input type="date" id="booking-date" name="date" value="2020-03-01" min="2020-01-01"
+                        max="2021-12-31" class="booking__form__element__input">
+                </div>
+                <div class="col-sm-6 booking__form__element">
+                    <select name="time" id="booking-time" class="booking__form__element__input">
+                        <option value="">Please choose a time</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 booking__form__element">
+                    <select name="service" id="booking-service" class="booking__form__element__input">
+                        <option value="Professional Makeup">Professional Makeup</option>
+                        <option value="Manicure Pedicure">Manicure Pedicure</option>
+                        <option value="Body Treatment">Body Treatment</option>
+                        <option value="Haircut & Coloring">Haircut & Coloring</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 booking__form__element">
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" required placeholder="Format 123456789"
+                        class="booking__form__element__input">
+                </div>
+                <div class="col-sm-12 booking__form__element">
+                    <textarea name="message" id="message" placeholder="Message" required=""
+                        class="booking__form__element__input message"></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="booking__form__button">Make an Appointment</button>
+        </form>
+    </section>
+    <script src="./js/main.js"></script>
 </body>
 
-</html>`
+</html>

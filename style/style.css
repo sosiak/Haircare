@@ -91,8 +91,7 @@ body {
 }
 
 .video-container {
-  position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
   display: -webkit-box;
@@ -226,6 +225,7 @@ body {
   z-index: 2;
   display: block;
   position: relative;
+  padding-top: 15%;
   top: 30%;
   text-align: center;
 }
@@ -259,6 +259,199 @@ body {
   text-decoration: none;
   border: 5px solid #bf925b;
   font-weight: bold;
+}
+
+.description .row {
+  margin-right: 0;
+  margin-left: 0;
+  min-height: 400px;
+}
+
+.description .row .description__man, .description .row .description__woman {
+  padding: 30px 50px;
+  background-image: url("../images/man.jpg");
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.description .row .description__man h1, .description .row .description__woman h1 {
+  border: solid 2px #bf925b;
+  padding: 150px 70px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.description .row .description__woman {
+  background-image: url("../images/woman.jpg");
+}
+
+.description .row .description__text {
+  background-color: #f6f2ea;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.description .row .description__text__logo {
+  height: 70px;
+  width: auto;
+}
+
+.description .row .description__text__header {
+  padding-bottom: 5px;
+  border-bottom: solid 2px #bf925b;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.description .row .description__text__paragraph {
+  color: #929190;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.description .row .description__text__more {
+  display: inline-block;
+  margin-top: 20px;
+  color: #bf925b;
+  padding: 10px;
+  border: solid 2px #bf925b;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.description .row .description__text__more:hover {
+  cursor: pointer;
+  background-color: #bf925b;
+  color: white;
+  text-decoration: none;
+}
+
+.services {
+  background-color: #f6f2ea;
+  padding: 60px 50px;
+}
+
+.services__small-title {
+  color: #bf925b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.services__big-title {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.services__paragraph {
+  color: #929190;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.services .row .services__element {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services .row .services__element__icon {
+  height: 70px;
+  width: auto;
+}
+
+.services .row .services__element__title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #bf925b;
+}
+
+.services .row .services__element__description {
+  padding: 10px 25px;
+  font-size: 1em;
+  color: #929190;
+}
+
+.booking {
+  background-color: #ece8de;
+  padding: 60px 50px;
+}
+
+.booking__small-title {
+  color: #bf925b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.booking__big-title {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.booking__paragraph {
+  color: #929190;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.booking__form {
+  padding: 30px 50px;
+}
+
+.booking__form .row .booking__form__element__input {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 1em;
+  padding: 8px 15px;
+  border: solid 2px #bf925b;
+  background-color: #ece8de;
+}
+
+.booking__form .row .booking__form__element__input:focus {
+  outline: none;
+}
+
+.booking__form .row .booking__form__element .message {
+  height: 150px;
+}
+
+.booking__form .row .booking__form__element select {
+  background: url("../images/arrow-down.png") no-repeat right #ddd;
+  -webkit-appearance: none;
+  background-position-x: 98%;
+  background-color: #ece8de;
+}
+
+.booking__form .booking__form__button {
+  font-size: 1.5em;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #bf925b;
+  color: white;
+  border: none;
+  margin: 10px auto;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.booking__form .booking__form__button:focus {
+  outline: none;
 }
 
 @media (max-width: 992px) {
