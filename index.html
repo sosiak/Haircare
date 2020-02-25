@@ -14,29 +14,30 @@
 
 <body>
     <header class="video-container">
+        <nav>
+            <a href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+            <ul class="menu">
+                <li class="menu__item"><a href="#start" id="startListItem">HOME</a></li>
+                <li class="menu__item"><a href="#services" id="aboutMeListItem">SERVICES</a></li>
+                <li class="menu__item"><a href="#team" id="skillsListItem">TEAM</a></li>
+                <li class="menu__item"><a href="#prices" id="portfolioListItem">PRICES</a></li>
+                <li class="menu__item"><a href="#contact" id="contactListItem">CONTACT</a></li>
+                <li class="menu__item book"><a href="#book" id="bookListItem">BOOK NOW</a></li>
+                <li class="menu__item nav">
+                    <div class="nav-icon">
+                        <span id="first"></span>
+                        <span id="second"></span>
+                        <span id="third"></span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
         <div class="overlay">
             <video poster="background-video.jpg" autoplay muted loop class="video-container__background">
                 <source src="video.mp4" type="video/webm">
                 <source src="video.webm" type="video/mp4">
             </video>
-            <nav>
-                <a href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
-                <ul class="menu">
-                    <li class="menu__item"><a href="#start" id="startListItem">HOME</a></li>
-                    <li class="menu__item"><a href="#services" id="aboutMeListItem">SERVICES</a></li>
-                    <li class="menu__item"><a href="#team" id="skillsListItem">GALLERY</a></li>
-                    <li class="menu__item"><a href="#about" id="portfolioListItem">ABOUT</a></li>
-                    <li class="menu__item"><a href="#contact" id="contactListItem">CONTACT</a></li>
-                    <li class="menu__item book"><a href="#book" id="bookListItem">BOOK NOW</a></li>
-                    <li class="menu__item nav">
-                        <div class="nav-icon">
-                            <span id="first"></span>
-                            <span id="second"></span>
-                            <span id="third"></span>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+
         </div>
         <div class="video-container__slogan">
             <h2>Welcome to Haircare</h2>
@@ -157,6 +158,56 @@
 
             <button type="submit" class="booking__form__button">Make an Appointment</button>
         </form>
+    </section>
+    <section class="team">
+        <h2 class="team__small-title">Artistic Director</h2>
+        <h1 class="team__big-title">Makeup Artist</h1>
+        <p class="team__paragraph">Faf far away, behind the word mountains, far from the countries Vokalia and
+            Consonantia</p>
+        <div class="row">
+            <div class="team__person col-lg-4 col-md-6">
+                <img src="./images/portrait_1.jpg" alt="Danica Lewis" class="team__person__photo">
+                <div class="team__person__description">
+                    <h1 class="team__person__description__name">Danica Lewis</h1>
+                    <h2 class="team__person__description__job">Hair Stylist</h2>
+                </div>
+            </div>
+            <div class="team__person col-lg-4 col-md-6">
+                <img src="./images/portrait_5.jpg" alt="Danica Lewis" class="team__person__photo">
+                <div class="team__person__description">
+                    <h1 class="team__person__description__name">Nicole Simon</h1>
+                    <h2 class="team__person__description__job">Nail Master</h2>
+                </div>
+            </div>
+            <div class="team__person col-lg-4 col-md-6">
+                <img src="./images/portrait_4.jpg" alt="Danica Lewis" class="team__person__photo">
+                <div class="team__person__description">
+                    <h1 class="team__person__description__name">Frank Meyer</h1>
+                    <h2 class="team__person__description__job">Director</h2>
+                </div>
+            </div>
+            <div class="team__person col-lg-4 col-md-6">
+                <img src="./images/portrait_3.jpg" alt="Danica Lewis" class="team__person__photo">
+                <div class="team__person__description">
+                    <h1 class="team__person__description__name">Rachel Clinton</h1>
+                    <h2 class="team__person__description__job">Hair Stylist</h2>
+                </div>
+            </div>
+            <div class="team__person col-lg-4 col-md-6">
+                <img src="./images/portrait_2.jpg" alt="Danica Lewis" class="team__person__photo">
+                <div class="team__person__description">
+                    <h1 class="team__person__description__name">Dave Buff</h1>
+                    <h2 class="team__person__description__job">Barber</h2>
+                </div>
+            </div>
+            <div class="team__person col-lg-4 col-md-6">
+                <img src="./images/portrait_6.jpg" alt="Danica Lewis" class="team__person__photo">
+                <div class="team__person__description">
+                    <h1 class="team__person__description__name">Ariana Stephens</h1>
+                    <h2 class="team__person__description__job">Hair Stylist</h2>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="./js/main.js"></script>
 </body>
