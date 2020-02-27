@@ -445,6 +445,101 @@ body {
 
 }
 
+.prices {
+    background-color: rgb(236, 232, 222);
+    padding: 70px 50px;
+
+    &__small-title {
+        color: $gold;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    &__big-title {
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+
+    &__paragraph {
+        color: $grey;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .row {
+        padding: 30px 150px;
+
+        .prices__element {
+            padding: 20px 0px 0px 0px;
+            border-radius: 10px;
+            border: solid 1px $gold;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 23%;
+            background-color: rgb(246, 242, 234);
+            transition: 0.5s;
+
+            &:hover {
+                transform: translateY(-10px);
+                border-color: #62454f;
+            }
+
+            &__title {
+                color: $gold;
+                text-align: center;
+                font-weight: bold;
+                font-size: .8em;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                line-height: 2em;
+
+                &:hover {
+                    color: #62454f;
+                }
+            }
+
+            &__price {
+                line-height: 2em;
+                font-weight: bold;
+                font-size: 1.2em;
+                letter-spacing: 1.1px;
+            }
+
+            &__service {
+                color: $grey;
+                line-height: 2em;
+                padding: 3px;
+
+                &__button {
+                    background-color: $gold;
+                    color: white;
+                    outline: none;
+                    border: 0;
+                    padding: 15px 30px;
+                    border-radius: 50%;
+                    position: relative;
+                    top: 1.7em;
+                }
+            }
+
+            .dark {
+                background-color: rgb(236, 232, 222);
+            }
+
+            // &:hover {
+            //     border-color: #62454f;
+            // }
+        }
+    }
+}
+
 
 @media(max-width: 992px) {
     .video-container {
