@@ -122,11 +122,11 @@ body {
   z-index: 3;
   width: 100%;
   display: block;
-  position: relative;
+  position: fixed;
 }
 
 .video-container nav .logo {
-  position: absolute;
+  position: relative;
   display: inline;
   top: 20px;
   left: 70px;
@@ -302,6 +302,7 @@ body {
   color: #929190;
   margin-top: 20px;
   font-size: 0.9em;
+  padding: 10px 120px;
 }
 
 .description .row .description__text__more {
@@ -323,7 +324,7 @@ body {
 
 .services {
   background-color: #f6f2ea;
-  padding: 70px 50px;
+  padding: 70px 150px;
 }
 
 .services__small-title {
@@ -374,7 +375,7 @@ body {
 
 .booking {
   background-color: #ece8de;
-  padding: 70px 50px;
+  padding: 70px 150px;
 }
 
 .booking__small-title {
@@ -448,7 +449,7 @@ body {
 
 .team {
   background-color: #f6f2ea;
-  padding: 70px 50px;
+  padding: 70px 150px;
 }
 
 .team__small-title {
@@ -569,6 +570,7 @@ body {
   background-color: #f6f2ea;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  min-height: 350px;
 }
 
 .prices .row .prices__element:hover {
@@ -611,12 +613,88 @@ body {
   border: 0;
   padding: 15px 30px;
   border-radius: 50%;
-  position: relative;
-  top: 1.7em;
+  position: absolute;
+  bottom: -25px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .prices .row .prices__element .dark {
   background-color: #ece8de;
+}
+
+.map {
+  min-height: 40vh;
+  background-color: #333333;
+}
+
+.map__google {
+  width: 100%;
+}
+
+.footer {
+  background-color: #333333;
+  padding: 50px 150px;
+}
+
+.footer .row .footer__column__title {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.footer .row .footer__column__paragraph {
+  color: #929190;
+  margin-bottom: 20px;
+}
+
+.footer .row .footer__column__social {
+  color: white;
+  font-size: 2em;
+  margin-right: 7px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer .row .footer__column__social:hover {
+  text-decoration: none;
+  color: #bf925b;
+}
+
+.footer .row .footer__column__link {
+  display: block;
+  margin-bottom: 10px;
+  color: #929190;
+  font-weight: bold;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer .row .footer__column__link:hover {
+  color: #bf925b;
+  text-decoration: none;
+}
+
+.footer .row .footer__column__icon {
+  color: #bf925b;
+  margin: 0 10px 5px 0;
+}
+
+.footer .row .footer__column__question-paragraph {
+  display: inline;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    padding: 50px 50px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -626,20 +704,35 @@ body {
   .video-container nav .menu {
     padding: 15px 0px 15px 5px;
   }
+  .booking {
+    padding: 50px 50px;
+  }
+  .services {
+    padding: 50px 50px;
+  }
+  .services .row .services__element {
+    padding: 30px;
+  }
+  .team {
+    padding: 50px 50px;
+  }
+  .prices .row {
+    padding: 30px 30px;
+  }
 }
 
 @media (max-width: 767px) {
+  .video-container nav {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
   .video-container nav .logo {
     z-index: 4;
-    position: fixed;
   }
   .video-container nav .menu {
-    position: fixed;
     z-index: 3;
     display: block;
     float: left;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
   }
   .video-container nav .menu__item {
     display: block;
@@ -654,6 +747,13 @@ body {
     position: fixed;
     right: 20px;
     top: 30px;
+  }
+  .prices .row .prices__element {
+    max-width: 48%;
+    margin-top: 50px;
+  }
+  .footer {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
